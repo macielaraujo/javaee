@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+	--corAzul: #8DA1EA;
+	--corRosa: #E55ED3;
+	--corLaranja: #D1503B;
+	--corBranca: #E8E6E8;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald';
+}
+
+body{
+	background-image: linear-gradient(95deg, #8DA1EA,#ED92E0);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+}
+
+.painel{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255,255,255,0.7);
+	padding: 40px;
+	min-width: 300px;
+	max-width: 500px;
+	min-height: 450px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.3),
+				inset 5px 5px 15px rgba(255,255,255,0.5),
+				-5px -5px 20px rgba(0,0,0,0.3),
+				inset -5px -5px 15px rgba(255,255,255,0.5);
+}
+.painel img{
+	margin: 0;
+	padding: 0;
+	max-width: 250px;
+}
+.painel h1{
+	color: var(--corRosa);
+	font-size: 1.65em;
+	text-align: center;
+	margin: 20px 0;
+}
+.painel a{
+	margin: auto;
+	color: var(--corBranca);
+	letter-spacing: 3px;
+	line-height: 30px;
+	font-size: 1.3em;
+	background-color: var(--corLaranja);
+	width: 170px;
+	text-align: center;
+	height: 35px;
+	text-decoration: none;
+	border-radius: 15px;
+	transition: 1s;
+}
+.painel a:hover{
+	letter-spacing: 4px;
+	background-color: #C1201B;
+}
